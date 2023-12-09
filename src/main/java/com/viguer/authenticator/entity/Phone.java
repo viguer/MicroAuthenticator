@@ -1,4 +1,4 @@
-package com.viguer.authenticator.models;
+package com.viguer.authenticator.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
