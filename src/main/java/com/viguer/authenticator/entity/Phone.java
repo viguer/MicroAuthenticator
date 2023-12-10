@@ -2,15 +2,20 @@ package com.viguer.authenticator.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
 @Table(name = "Phones")
-public class Phone {
+@NoArgsConstructor
+public class Phone implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,7 +26,13 @@ public class Phone {
     private Integer countryCode;
 
     @ManyToOne
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "user_id")
     private User user;
 
+    public Phone(Integer number, Integer cityCode, Integer countryCode, User user) {
+        this.number = number;
+        this.cityCode = cityCode;
+        this.countryCode = countryCode;
+        this.user = user;
+    }
 }
