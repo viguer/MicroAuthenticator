@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "af8a7613-bab6-4ccf-854e-cf1bc81edd6f",
+		"name": "Proyecto Nisum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4990483"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Andres\",\n\"email\": \"pruebasQ@gmail.com\",\n\"password\": \"Passw0rd@\",\n\"phones\": [\n    {\n        \"number\": 234678,\n        \"cityCode\": 123,\n        \"countryCode\": 1\n    },\n        {\n        \"number\": 9086,\n        \"cityCode\": 567,\n        \"countryCode\": 9\n    }\n]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"pruebasQ@gmail.com\",\n    \"password\": \"Passw0rd@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testPublic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/v1/test/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"test",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testUser Activo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFzUUBnbWFpbC5jb20iLCJpYXQiOjE3MDIyNzI1ODUsImV4cCI6MTcwMjI3NDU4NX0.ibnFlrTL698F4zyTNWifoGkYc5gVsLNxnYQp_maS570",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/test/activo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"test",
+						"activo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testUser auth",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjIzNDYwOCwiZXhwIjoxNzAyMjM2NjA4fQ.-3xJr7sKdNIhGHQowYepN9-50niYiCr3trrNfaI_AnM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/v1/test/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"v1",
+						"test",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
