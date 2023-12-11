@@ -74,6 +74,6 @@ Acceso con token JWT correcto
 
 Acceso con token JWT incorrecto
 
-![TokenIncorrecto.png](img_8.png)### Ingreso
+![TokenIncorrecto.png](img_8.png)
 
 
