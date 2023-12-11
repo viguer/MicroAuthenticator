@@ -8,14 +8,15 @@ import java.util.regex.Pattern;
 @Component
 public class ValidatorRegex {
 
+    private static final String EMAIL_PATTERN = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
     @Value("${password.regex}")
     private String regexPassword;
-    private static final String EMAIL_PATTERN = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
-    public Boolean email(String email){
+
+    public Boolean email(String email) {
         return Pattern.matches(EMAIL_PATTERN, email);
     }
 
-    public Boolean password(String password){
+    public Boolean password(String password) {
         return Pattern.matches(regexPassword, password);
     }
 }

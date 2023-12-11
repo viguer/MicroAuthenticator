@@ -2,6 +2,7 @@ package com.viguer.authenticator.payload.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +12,7 @@ import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class SignupRequest implements Serializable {
 
     private static final long serialVersionUID = 1L;

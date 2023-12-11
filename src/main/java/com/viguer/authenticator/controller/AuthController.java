@@ -10,7 +10,7 @@ import com.viguer.authenticator.payload.response.GeneralResponse;
 import com.viguer.authenticator.payload.response.SigninResponse;
 import com.viguer.authenticator.payload.response.SignupResponse;
 import com.viguer.authenticator.repository.UserRepository;
-import com.viguer.authenticator.security.jwt.JwtUtils;
+import com.viguer.authenticator.config.security.jwt.JwtUtils;
 import com.viguer.authenticator.util.ValidatorRegex;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
