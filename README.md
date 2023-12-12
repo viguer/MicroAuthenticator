@@ -6,7 +6,7 @@ la autenticación y seguridad.
 
 ## Diagrama donde se muestra el registro, el inició de sesión y acceso a recursos.
 
-![Authenticator.png](DiagramaFlujo.png)
+![Authenticator.png](Documentacion/DiagramaFlujo.png)
 
 ## Manual de Uso
 
@@ -31,7 +31,7 @@ O por el contrario usar la Base de datos integrada H2 (Recomendada para realizar
 ```
 ### Diagrama tablas Base de datos
 
-![img_10.png](DiagramaBD.png)
+![img_10.png](Documentacion/DiagramaBD.png)
 
 ### Script tablas base de datos
 
@@ -93,45 +93,45 @@ COMMIT;
 ```
 ## Postman
 
-[Colección para Postman](CollectionAuthenticator.postman_collection.json)
+[Colección para Postman](Documentacion/CollectionAuthenticator.postman_collection.json)
 
 ### Registro
 
 Creación de Usuario exitoso
 
-![ExtisoCrearUser.png](Registro01.png)
+![ExtisoCrearUser.png](Documentacion/Registro01.png)
 
 Creación de Usuario, correo electrónico ya está registrado
 
-![CorreoYaExiste.png](Registro02.png)
+![CorreoYaExiste.png](Documentacion/Registro02.png)
 
 Creación de Usuario, correo electrónico no cumple formato
 
-![CorreoNoCorrecto.png](Registro03.png)
+![CorreoNoCorrecto.png](Documentacion/Registro03.png)
 
 Creación de Usuario, password no cumple regla
 
-![passwordIncorrecto.png](Registro04.png)
+![passwordIncorrecto.png](Documentacion/Registro04.png)
 
 ### Ingreso
 
 Ingreso de Usuario exitoso
 
-![IngresoCorrecto.png](Ingreso02.png)
+![IngresoCorrecto.png](Documentacion/Ingreso02.png)
 
 Ingreso de Usuario, credenciales incorrectos
 
-![IngresoIncorrecto.png](Ingreso01.png)
+![IngresoIncorrecto.png](Documentacion/Ingreso01.png)
 
 ### Acceso a Recursos
 
 Acceso con token JWT correcto
 
-![TokenCorrecto.png](AccesoRecurso02.png)
+![TokenCorrecto.png](Documentacion/AccesoRecurso02.png)
 
 Acceso con token JWT incorrecto
 
-![TokenIncorrecto.png](AccesoRecurso01.png)
+![TokenIncorrecto.png](Documentacion/AccesoRecurso01.png)
 
 ## Documentación Swagger
 
